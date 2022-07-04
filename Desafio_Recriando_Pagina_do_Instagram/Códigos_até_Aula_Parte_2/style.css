@@ -1,0 +1,38 @@
+*{ /* "Resetando" Estilos. Intuito de Evitar Problemas na Estilização. */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%; /* Largura. */
+    min-height: 100vh; /* Altura Mínima. */
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex; /* Transformando em um Flex-Container. */
+    justify-content: center; /* Alinhando o conteúdo ao centro da página. */
+}
+
+.instagram-wrapper{ /* Classe */
+    /* Para deixar, tanto o celular como o login, no meio da tela. */
+    display: flex; /* Transformando em um Flex-Container. */
+    align-items: center; /* Alinhamento Vertical dos Itens (eixo y). Aqui, nesse caso, ficará no centro. */
+    justify-content: start; /* Iniciando itens (eixo x), da esquerda para à direita (quando usa o start). */
+    width: 60%; /* Largura de 60% do body. */
+    height: 100vh; /* Altura. */
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img{ /* Aplicar para a classe instagram-phone, para a tag img. */
+    height: 50rem;
+}

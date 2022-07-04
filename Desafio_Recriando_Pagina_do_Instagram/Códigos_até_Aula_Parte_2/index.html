@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- Adicionando estilo CSS 3, por meio deste
+          arquivo chamado de style.css .
+        -->
+        <title>Instagram</title>
+    </head>
+                <!-- OBS: Estaremos usando o CSS FlexBox. -->
+    <body>
+        <!-- Criando uma div, que será o wraper do usuário (container pai), que vai segurar todo
+             o conteúdo, tanto do celular quanto do login.
+        -->
+        <div class="instagram-wrapper">
+            <!-- Dentro desta div, teremos duas colunas: coluna do celular e a coluna do login. -->
+            <div class="instagram-phone"> <!-- Div para coluna do celular. -->
+                <img src="./img/instagram-celular.png" alt="celular"> <!-- Inserindo imagem do celular, nesta div. -->
+
+            </div>
+            <div class="instagram-continue"> <!-- Div para a outra coluna. -->
+                <!-- Aqui, dentro desta div, teremos três containers. -->
+                <div class="group">
+                    <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                    <div class="profile-photo"> <!-- Div para foto de perfil de usuário. -->
+                        <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                    </div>
+                    <!-- Atalho: a*2 , seguido de TAB ou ENTER. Vai criar duas tags a . A tag a é de âncora. -->
+                    <a href="#" class="instagram-login">Continue como sprucegabriela</a> <!-- href="#" . Vai referenciar a própria página. -->
+                    <a href="#" class="instagram logout">Remover Conta</a> <!-- href="#" . Vai referenciar a própria página. -->
+                </div>
+                <div class="group">
+                    <p class="not-account">Não é sprucegabriela?</p>
+                    <p class="notaccount">
+                        <span class="link-blue">Alternar contas</span>
+                        ou
+                        <span class="link-blue">Inscreva-se</span>
+                    </p>
+                </div>
+                <div class="get-the-app">
+                    <p class="get-app">Baixe o aplicativo</p>
+                    <div class="download">
+                        <a href="#" class="app-download"></a>
+                        <a href="#" class="app-download"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

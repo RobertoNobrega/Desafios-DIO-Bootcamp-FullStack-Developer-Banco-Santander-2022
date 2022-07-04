@@ -1,0 +1,167 @@
+*{ /* "Resetando" Estilos. Intuito de Evitar Problemas na Estilização. */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%; /* Largura. */
+    min-height: 100vh; /* Altura Mínima. */
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex; /* Transformando em um Flex-Container. */
+    justify-content: center; /* Alinhando o conteúdo ao centro da página. */
+}
+
+.instagram-wrapper{ /* Classe */
+    /* Para deixar, tanto o celular como o login, no meio da tela. */
+    display: flex; /* Transformando em um Flex-Container. */
+    align-items: center; /* Alinhamento Vertical dos Itens (eixo y). Aqui, nesse caso, ficará no centro. */
+    justify-content: start; /* Iniciando itens (eixo x), da esquerda para à direita (quando usa o start). */
+    width: 60%; /* Largura de 60% do body. */
+    height: 100vh; /* Altura. */
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img{ /* Aplicar para a classe instagram-phone, para a tag img. */
+    height: 50rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center; /* OBS: Por usar flex-direction: column; align-items ficou no eixo horizontal. */
+    justify-content: space-around; /* OBS: Por usar flex-direction: column; justify-content ficou no eixo vertical. */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lighg;
+}
+
+/* Abaixo, vamos tratar do tamanho do container (de forma individual). */
+.group:nth-child(1){  /* nth-child é o seletor de CSS, para "pegar" os filhos daquele elemento
+    de HTML. Ao usar o número 1, indica que vai "pegar" o primeiro filho (aqui, este filho, neste
+    caso, é a caixa retangular, onde armazena a logo do Instagram, foto de usuário).
+    */
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    /* Foto de Perfil. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Arredondando a imagem. */
+    overflow: hidden; /* Aqui, nesta propriedade, vai servir para que a imagem não
+    exceda o tamanho da div. */
+}
+
+.profile-photo img{  /* Classe, para ser aplicado na tag img. */
+    height: 8rem; /* Tamanho da imagem. */
+}
+
+.instagram-login{  /* Estilo para Criar Botão dentro da Tag a. */
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160,160,160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /* Fornece um mesmo espaço (dos lados e do meio). */
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover; /** OBS: Ao usar esta propriedade, iremos setar, usando o
+    nth-child. */
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* Abaixo, iremos tratar da questão da Responsividade da Página WEB. */
+
+                /* Media Queries */
+@media(max-width: 1024px){ /* Tamanho de Tela, de Até 1024 pixels. */
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){ /* Tamanho de Tela, de Até 650 pixels. */
+    body{
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none; /* Está retirando a imagem do celular. */
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+}
