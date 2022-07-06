@@ -1,0 +1,19 @@
+
+body{ /* Seletor, para a tag body. */
+    display: flex; /* Aqui, body será um Flex-Container. */
+    flex-direction: column; /* Direção, na Vertical. */
+    align-items: center; /* Alinhando o(s) conteúdo(s) ao centro da página. */
+    justify-content: center;      
+}
+
+#tarefas_aqui{ /* Seletor, para o id tarefas_aqui. */
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+}
+
+.tarefa-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
