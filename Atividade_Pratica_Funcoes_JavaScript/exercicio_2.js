@@ -1,5 +1,5 @@
 /*
-                Atividade 2 (De Stephany Nush, da DIO): This
+                Atividade 2 (De Stephany Snusch, da DIO): This
         Dada a função calcularIdade, use os métodos call e apply para mudar o valor de this.
          OBS: Criar próprios objetos para a atividade.
 */
