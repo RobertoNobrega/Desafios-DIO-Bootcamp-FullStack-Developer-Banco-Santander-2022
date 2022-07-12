@@ -1,4 +1,4 @@
-
+/*      Aula da Stephane Snusch, da DIO. */
 function comparaNumeros(num1, num2){
     /* const saoIguais = num1 === num2; /* const informa que saoIguais é uma constante. = é o operador
     de atribuição, enquanto que === é o operador de 'igualdade'. Neste caso aqui, quando num1 === num2,
