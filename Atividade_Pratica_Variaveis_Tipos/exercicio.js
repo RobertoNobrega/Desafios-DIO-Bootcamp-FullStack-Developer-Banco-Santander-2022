@@ -1,5 +1,5 @@
-//   Exercício sobre Palíndromo. Palíndromo é uma palavra que pode ser lida, tanto da esquerda para a
-// direita, quanto da direita para a esquerda. O efeito é que a palavra e o som dela serão os mesmos.
+//   Exercício sobre Palíndromo (De Stephane Snusch, da DIO). Palíndromo é uma palavra que pode ser lida, tanto da esquerda para a
+//  direita, quanto da direita para a esquerda. O efeito é que a palavra e o som dela serão os mesmos.
 //   EX: ovo, arara, Ana.
 
         /*  Solução 1 */
