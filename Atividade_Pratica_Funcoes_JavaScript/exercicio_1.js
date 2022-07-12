@@ -1,5 +1,5 @@
 /*
-            Atividade 1 (De Stephany Nush, da DIO): Alunos Aprovados
+            Atividade 1 (De Stephany Snusch, da DIO): Alunos Aprovados
     1. Crie uma função que recebe o array alunos e um número que vai representar a média final;
     2. Percorra o array e popule um novo array auxiliar, apenas com os alunos, cujas notas são maiores ou
     iguais à média final;
