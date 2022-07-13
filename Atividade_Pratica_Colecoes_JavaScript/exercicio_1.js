@@ -1,5 +1,5 @@
 /*
-                    Atividade 1 (De Stephany Nush, da DIO): Maps
+                    Atividade 1 (De Stephany Snusch, da DIO): Maps
     1. Criar uma função getAdmins, que receba um Map;
     2. Criar um Map, popular com nomes de usuários e seus papeis no sistema. EX: Luis => Admin ;
     3. Em getAdmins, usar o loop for-of, para retornar uma lista de nomes dos usuários, que são administradores do sistema.

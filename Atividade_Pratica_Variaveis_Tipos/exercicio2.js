@@ -1,3 +1,4 @@
+/*    Aula da Stephane Snusch, da DIO.  */
 function substituiPares(array){
     //if(!array.length)
     //    return -1;
